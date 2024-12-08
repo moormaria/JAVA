@@ -1,0 +1,21 @@
+public class BreakAndContinueExample {
+    public static void main(String[] args) {
+        // ????????????? break
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                System.out.println("Breaking the loop at i = " + i);
+                break; // ????????? ????, ???? i ????? 5
+            }
+            System.out.println("i = " + i);
+        }
+
+        // ????????????? continue
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                System.out.println("Skipping even number: " + i);
+                continue; // ?????????? ?????? ?????
+            }
+            System.out.println("Odd number: " + i);
+        }
+    }
+}
